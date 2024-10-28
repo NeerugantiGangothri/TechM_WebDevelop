@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grocery Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grocery Order Form</h1>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="item">Item:</label>
+            <select id="item" name="item" required>
+                <option value="Rice">Rice</option>
+                <option value="Sugar">Sugar</option>
+                <option value="Flour">Flour</option>
+                <option value="Milk">Milk</option>
+                <option value="Eggs">Eggs</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label>Delivery Method:</label>
+            <input type="radio" id="pickup" name="delivery" value="pickup" required>
+            <label for="pickup" class="inline-label">Pick-up</label>
+            <input type="radio" id="homeDelivery" name="delivery" value="homeDelivery">
+            <label for="homeDelivery" class="inline-label">Home Delivery</label>
+
+            <label for="date">Preferred Delivery Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</body>
+</html>
